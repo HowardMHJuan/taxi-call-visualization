@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Taxi Call HotSpots</title>
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      #legend {
+        margin: 20px;
+      }
+      #legend img {
+        vertical-align: middle;
+      }
+      #dot {
+        margin: 12px 0 10px 6px;
+        font-weight: bold;
+      }
+      #dot img {
+        margin: 0 8px 0 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <div id="legend"><h3>圈圈內數字為叫車人數</h3></div>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAi4IKGR-WfMEUB0DOh51WG-N5pA78H0Gw&libraries=visualization">
+    </script>
+    <script 
+      src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
+    </script>
+    <script src="bundle.js"></script>
+  </body>
+</html>
